@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --purple: #8a2be2;
+    --violet: #ee82ee;
+    --pink: #ff69b4;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    /* cursor: none; */
+    overflow-x: hidden;
+    cursor: none;
+    
+}
+
+.cir1{
+    filter: blur(20px);
+    animation-name: yo1 ;
+    animation-duration: 4s;
+        animation-direction: alternate ; 
+        animation-iteration-count: infinite;
+}
+@keyframes yo1 {
+    from{
+        transform: translateY( 0 );
+    }to{
+        transform: translateY( 100px );
+    }
+}
+.cir2{
+    filter: blur(20px);
+    animation-name: yo2 ;
+    animation-duration: 3s;
+        animation-direction: alternate ; 
+        animation-iteration-count: infinite;
+}
+@keyframes yo2 {
+    from{
+        transform: translateX( 0 );
+    }to{
+        transform: translateX( 150px );
+    }
+}
+.cir3{
+    filter: blur(20px);
+    animation-name: yo3 ;
+    animation-duration: 3s;
+        animation-direction: alternate ; 
+        animation-iteration-count: infinite;
+}
+@keyframes yo3 {
+    from{
+        transform: translateX( 0 );
+        transform: translateY( 130px );
+
+    }to{
+        transform: translateX( 150px );
+        transform: translateY( -90px );
+    }
+}
+.abu {
+    writing-mode: vertical-lr;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .scroll-container {
+        flex-direction: row; /* Ensure horizontal alignment */
+    }
+
+    .abu {
+        writing-mode: horizontal-tb;
+    }
+}
+ 
+.tx{
+    writing-mode: vertical-lr;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+@media (max-width: 768px) {
+    .scroll-container {
+        flex-direction: row; /* Ensure horizontal alignment */
+    }
+
+    .tx {
+        writing-mode: horizontal-tb;
+    }
+}
+
+@keyframes background-pan{
+   from{
+    background-position: 0% center; 
+   }to{
+    background-position: -200% center;
+   }
+}
+ 
+.tst {
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+        to right,
+        var(--purple),
+        var(--violet),
+        var(--pink),
+        var(--purple)
+    );
+    background-size: 200% auto;
+    white-space: normal; 
+    text-align: center;   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ 
+@keyframes sap {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); /* Box */
+        background-color: #ff5733; /* Red */
+        transform: rotate(0deg);
+      }
+      50% {
+        clip-path: ellipse(50% 40% at 50% 50%); /* Intermediate shape */
+        background-color: #ff66cc; /* Transition color */
+        transform: rotate(15deg);
+      }
+      100% {
+        clip-path: circle(50% at 50% 50%); /* Circle */
+        background-color: #ff33aa; /* Pink */
+        transform: rotate(30deg);
+      }
+    
+}
+
+.shap{
+    width: 150px;
+    height: 150px;
+    animation: sap 2s ease-in-out infinite alternate-reverse;
+    
+}
+.fon{
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+  
