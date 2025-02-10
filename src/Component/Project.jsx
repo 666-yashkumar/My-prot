@@ -46,9 +46,21 @@ const Project = () => {
               </a>
             </div>
           </div>
-          <div className="b3 w-[250px] h-[210px] md:h-[320px] text-white rounded-lg text-center hover:scale-105 transition-all ease-linear bg-black md:block hidden">
-            <h1 className="text-[20px]" >Other Links</h1>
-            <h2 className="text-blue-600 hover:underline">Linkone</h2>
+          <div className="b3 w-[250px] h-[210px] md:h-[320px] text-white rounded-lg text-center hover:scale-105 transition-all ease-linear bg-black  bg-opacity-30 md:block hidden">
+            <h1 className="text-[20px] pt-3 text-black underline" >Other Links</h1>
+            <div className="px-5 py-4">
+            <h2 className="text-blue-600 hover:underline px-2 py-2 mb-1 bg-white hover:scale-105 transform transition-transform duration-300 ease-in-out rounded-lg "> 
+            <a
+                href=" https://portfolio-theta-eight-30.vercel.app/"
+                 
+              >Sample Portfolio </a></h2>
+
+            <h2 className="text-blue-600 hover:underline px-2 py-2 mb-1 bg-white hover:scale-105 transform transition-transform duration-300 ease-in-out  rounded-lg"> <a href=" https://edu-pg.vercel.app/">Education site </a></h2>
+            <h2 className="text-blue-600 hover:underline px-2 py-2 mb-1 bg-white hover:scale-105 transform transition-transform duration-300 ease-in-out rounded-lg"><a href=" https://contact-pg.vercel.app/">Contact page    - </a></h2>
+            <h2 className="text-blue-600 hover:underline px-2 py-2 mb-1 bg-white hover:scale-105 transform transition-transform duration-300 ease-in-out rounded-lg"><a href=" https://brand-home-pag.vercel.app/">Brand Home page </a></h2>
+            <h2 className="text-blue-600 hover:underline px-2 py-2 bg-white hover:scale-105 transform transition-transform duration-300 ease-in-out rounded-lg"><a href="https://amora-five.vercel.app/">Tech site </a></h2>
+            
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "./Images/Profile.jpeg";
+import Profile from "./Images/My.avif";
 
 const Aboutus = () => {
   return (
@@ -7,12 +7,11 @@ const Aboutus = () => {
       <div className="contain md:flex items-center md:gap-20 gap-0  flex flex-col justify-center  md:flex-row">
       <div className="abu md:text-[150px] text-[50px]  ">ABOUT</div>
             <div className="md:flex md:justify-between items-center md:px-0 gap-[20px]   flex flex-col justify-center  md:flex-row ">
-                <div className="img md:w-[200px] w-[160px] md:h-[300px] h-[200px] bg-black flex-shrink-0 "></div>
+                <div className="img md:w-[200px] w-[160px] rounded-lg overflow-hidden md:h-[300px] h-[200px] bg-black flex-shrink-0 ">
+                  <img src={Profile} alt="Profile" className="w-full h-full object-cover"/>
+                </div>
                 <div className="info">
-                 <p className="txt md:text-[20px] text-[15px] md:px-20 px-16  "> Lorem ipsum dolor sit amet consectetur adipisicing elit.Atque, quidem
-                  quasi ab debitis voluptate eveniet voluptas   reprehenderit iusto,
-                  eligendi cum perspiciatis velit  autem fugiat officia. Voluptatem cum vel
-                  aliquid voluptates.</p>
+                 <p className="txt md:text-[20px] text-[15px] md:px-20 px-16  "> An enthusiastic and detail-oriented professional with expertise in IT, React, Three.js, GSAP, and web development. Transitioning from an introvert to someone who actively seeks insights, I’ve honed my skills by staying vigilant and focused. My active listening ability fosters meaningful connections, while my calm demeanor under pressure drives innovation and optimal outcomes.</p>
                 </div>
             </div>
       </div>
