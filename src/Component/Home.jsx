@@ -1,5 +1,6 @@
 import React from 'react';
 import My from './Images/My.jpg';
+import YASH from './Images/_YASH.pdf';
 import { TypeAnimation } from 'react-type-animation';
 import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 
@@ -34,7 +35,9 @@ const Home = () => {
           </h1>
           <h1 className="md:text-[20px] text-[15px] capitalize font-semibold px-2 ml-5 md:m-2 md:ml-3 py-1 md:border-l-2 md:border-white hover:text-zinc-900 cursor-pointer">
             <span className="border border-none bg-white px-2 py-1 rounded-md hover:bg-slate-500">
-              My Resume
+            <a href={YASH} download="Yash_Resume.pdf" className="flex items-center justify-center">
+                  My Resume
+                  </a>
             </span>
           </h1>
         </div>
