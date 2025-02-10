@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "./Images/My.avif";
+import Profile from "./Images/my.avif";
 
 const Aboutus = () => {
   return (
