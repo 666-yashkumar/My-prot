@@ -1,6 +1,6 @@
 import React from 'react';
 import My from './Images/My.jpg';
-import YASH from './Images/_YASH.pdf';
+import YASH from './Images/YASH.pdf';
 import { TypeAnimation } from 'react-type-animation';
 import { FaGithub, FaLinkedin, FaInstagram, FaFacebook } from 'react-icons/fa';
 
